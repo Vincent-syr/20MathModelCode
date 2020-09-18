@@ -6,13 +6,13 @@ from scipy import signal
 import pandas as pd
 
 
-def butter_filter(raw_data, lowcut=25, fs=250):
+def butter_filter(raw_data, lowcut=30, fs=250):
     """[summary]
 
     Args:
-        raw_data ([type]): np.array, 
+        raw_data ([type]): np.array, shape[N, 1]
         lowcut (int, optional): [description]. low cut frequency, don't need to revise,Defaults to 25.
-        fs (int, optional): [description]. Defaults to 250. sample frequency, don't need to revise'
+        fs (int, optional): [description]. Defaults to 250hz. sample frequency, don't need to revise'
 
     Returns:
         [type]: [description]
